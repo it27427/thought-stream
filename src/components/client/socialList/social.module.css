@@ -1,0 +1,33 @@
+.listsocial {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.socialitem {
+  border-radius: 100%;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  color: #fff;
+}
+
+.socialitem:nth-child(1) {
+  background: #1877f2;
+}
+
+.socialitem:nth-child(2) {
+  background: #fa7e1e;
+}
+
+.socialitem:nth-child(3) {
+  background: #000000;
+}
+
+.socialitem:nth-child(4) {
+  background: #ff0000;
+}
