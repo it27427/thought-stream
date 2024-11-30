@@ -92,8 +92,16 @@ textarea {
   gap: var(--spacing);
 }
 
+.gap-1-half {
+  gap: calc(1.5 * var(--spacing));
+}
+
 .gap-2 {
   gap: calc(2 * var(--spacing));
+}
+
+.gap-2-half {
+  gap: calc(2.5 * var(--spacing));
 }
 
 .gap-3 {
@@ -116,8 +124,16 @@ textarea {
   padding: var(--spacing);
 }
 
+.p-1-half {
+  padding: calc(1.5 * var(--spacing));
+}
+
 .p-2 {
   padding: calc(2 * var(--spacing));
+}
+
+.p-2-half {
+  padding: calc(2.5 * var(--spacing));
 }
 
 .p-3 {
@@ -136,8 +152,16 @@ textarea {
   padding-inline: var(--spacing);
 }
 
+.px-1-half {
+  padding-inline: calc(1.5 * var(--spacing));
+}
+
 .px-2 {
   padding-inline: calc(2 * var(--spacing));
+}
+
+.px-2-half {
+  padding-inline: calc(2.5 * var(--spacing));
 }
 
 .px-3 {
@@ -156,8 +180,16 @@ textarea {
   padding-block: var(--spacing);
 }
 
+.py-1-half {
+  padding-block: calc(1.5 * var(--spacing));
+}
+
 .py-2 {
   padding-block: calc(2 * var(--spacing));
+}
+
+.py-2-half {
+  padding-block: calc(2.5 * var(--spacing));
 }
 
 .py-3 {
@@ -173,7 +205,7 @@ textarea {
 }
 
 /* MEDIA-QUERIES (1536px) */
-@media screen and (max-width: var(--xxxl)) {
+@media screen and (max-width: 96rem) {
   .container {
     max-width: var(--xxl);
     padding-inline: calc(5 * var(--spacing));
@@ -181,7 +213,7 @@ textarea {
 }
 
 /* MEDIA-QUERIES (1366px) */
-@media screen and (max-width: var(--xxl)) {
+@media screen and (max-width: 85.375rem) {
   .container {
     max-width: var(--xl);
     padding-inline: calc(4 * var(--spacing));
@@ -189,7 +221,7 @@ textarea {
 }
 
 /* MEDIA-QUERIES (1200px) */
-@media screen and (max-width: var(--xl)) {
+@media screen and (max-width: 75rem) {
   .container {
     max-width: var(--lg);
     padding-inline: calc(3 * var(--spacing));
@@ -197,7 +229,7 @@ textarea {
 }
 
 /* MEDIA-QUERIES (1024px) */
-@media screen and (max-width: var(--lg)) {
+@media screen and (max-width: 64rem) {
   .container {
     max-width: var(--md);
     padding-inline: calc(2 * var(--spacing));
@@ -205,7 +237,7 @@ textarea {
 }
 
 /* MEDIA-QUERIES (768px) */
-@media screen and (max-width: var(--md)) {
+@media screen and (max-width: 48rem) {
   .container {
     max-width: var(--sm);
     padding-inline: calc(1 * var(--spacing));
