@@ -3,7 +3,12 @@ import React from 'react';
 const Home = () => {
   return (
     <>
-      <h1>Home Page</h1>
+      {/* HERO-SECTION */}
+      <section className='hero'>
+        <div className='container'>
+          <h1>Hero Section</h1>
+        </div>
+      </section>
     </>
   );
 };
