@@ -6,22 +6,22 @@ const MainMenu = () => {
     <ul className={styles.mainmenu}>
       <li>
         <Link href='/' className={styles.menulink}>
-          Home
+          <span>Home</span>
         </Link>
       </li>
       <li>
         <Link href='/about' className={styles.menulink}>
-          About
+          <span>About</span>
         </Link>
       </li>
       <li>
         <Link href='/blogs' className={styles.menulink}>
-          Blogs
+          <span>Blogs</span>
         </Link>
       </li>
       <li>
         <Link href='/contact' className={styles.menulink}>
-          Contact
+          <span>Contact</span>
         </Link>
       </li>
     </ul>

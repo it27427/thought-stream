@@ -1,15 +1,50 @@
 .mainmenu {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  /* gap: 1.25rem; */
 }
 
 .menulink {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.875rem;
+  padding: 0.5rem 1.25rem;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
+.menulink::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: transparent;
+  transition: all 500ms ease-in-out;
+}
+
+.menulink span {
+  font-size: 0.813rem;
   font-weight: 600;
+  position: relative;
   text-align: center;
   text-transform: uppercase;
+  transition: all 500ms ease-in-out;
+  z-index: 10;
+}
+
+.menulink:hover span {
+  color: hsl(0, 0%, 100%);
+}
+
+.menulink:hover::before {
+  background: hsl(223, 100%, 14%);
+  width: 100%;
+}
+
+@media screen and (min-width: 87.5rem) {
+  .menulink span {
+    font-size: 1.125rem;
+  }
 }

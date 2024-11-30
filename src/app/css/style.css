@@ -111,6 +111,8 @@ button {
                       UTILITIES
 ====================================================*/
 .container {
+  width: 100%;
+  max-width: var(--xxxl);
   margin-inline: auto;
 }
 
@@ -304,7 +306,6 @@ button {
 /* BREAK-POINT: 1536px */
 @media screen and (max-width: 96rem) {
   .container {
-    width: 100%;
     max-width: var(--xxl);
     padding-inline: calc(5 * var(--spacing));
   }

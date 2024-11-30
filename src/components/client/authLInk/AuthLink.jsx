@@ -4,7 +4,9 @@ import Link from 'next/link';
 const AuthLink = () => {
   return (
     <>
-      <Link href='#' className={styles.loginbutton}>Login</Link>
+      <Link href='#' className={styles.loginbutton}>
+        <span>Login</span>
+      </Link>
     </>
   )
 }

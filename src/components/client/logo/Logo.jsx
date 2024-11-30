@@ -4,9 +4,9 @@ import styles from './logo.module.css';
 
 const Logo = () => {
   return (
-    <>
-      <Image src={BrandLogo} alt='Brand Logo' width={100} height={48} className={styles.logo} />
-    </>
+    <figure className={styles.brandlogo}>
+      <Image src={BrandLogo} alt='Brand Logo' width={96} height={60} className={styles.logo} />
+    </figure>
   )
 }
 
