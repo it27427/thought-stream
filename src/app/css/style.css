@@ -1,0 +1,171 @@
+:root {
+  --background: #f0f0f0;
+  --foreground: #171717;
+
+  --white: #ffffff;
+  --black: #000000;
+  --primary: #001447;
+  --secondary: #e00051;
+  --tertiary: #faaa2c;
+
+  --spacing: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::selection {
+  background: transparent;
+  color: var(--primary);
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100svh;
+}
+
+figure,
+img,
+section,
+main,
+article,
+header,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+/*===================================================
+                      UTILITIES
+====================================================*/
+.container {
+  max-width: clamp(300px, 80vw, 1200px);
+  margin-inline: auto;
+}
+
+.gap-1 {
+  gap: var(--spacing);
+}
+
+.gap-2 {
+  gap: calc(2 * var(--spacing));
+}
+
+.gap-3 {
+  gap: calc(3 * var(--spacing));
+}
+
+.gap-4 {
+  gap: calc(4 * var(--spacing));
+}
+
+.gap-5 {
+  gap: calc(5 * var(--spacing));
+}
+
+.mx-auto {
+  margin-inline: auto;
+}
+
+.p-1 {
+  padding: var(--spacing);
+}
+
+.p-2 {
+  padding: calc(2 * var(--spacing));
+}
+
+.p-3 {
+  padding: calc(3 * var(--spacing));
+}
+
+.p-4 {
+  padding: calc(4 * var(--spacing));
+}
+
+.p-5 {
+  padding: calc(5 * var(--spacing));
+}
+
+.px-1 {
+  padding-inline: var(--spacing);
+}
+
+.px-2 {
+  padding-inline: calc(2 * var(--spacing));
+}
+
+.px-3 {
+  padding-inline: calc(3 * var(--spacing));
+}
+
+.px-4 {
+  padding-inline: calc(4 * var(--spacing));
+}
+
+.px-5 {
+  padding-inline: calc(5 * var(--spacing));
+}
+
+.py-1 {
+  padding-block: var(--spacing);
+}
+
+.py-2 {
+  padding-block: calc(2 * var(--spacing));
+}
+
+.py-3 {
+  padding-block: calc(3 * var(--spacing));
+}
+
+.py-4 {
+  padding-block: calc(4 * var(--spacing));
+}
+
+.py-5 {
+  padding-block: calc(5 * var(--spacing));
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
