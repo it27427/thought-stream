@@ -4,7 +4,7 @@ const RootLayout = ({ children }) => {
   return (
     <html lang='en' suppressHydrationWarning={true}>
       <body>
-        <main className='container'>{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );

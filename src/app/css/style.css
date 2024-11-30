@@ -1,12 +1,12 @@
 :root {
-  --background: #f0f0f0;
-  --foreground: #171717;
+  --background: hsl(0, 0%, 94%);
+  --foreground: hsl(0, 0%, 9%);
 
-  --white: #ffffff;
-  --black: #000000;
-  --primary: #001447;
-  --secondary: #e00051;
-  --tertiary: #faaa2c;
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --primary: hsl(223, 100%, 14%);
+  --secondary: hsl(338, 100%, 44%);
+  --tertiary: hsl(37, 95%, 58%);
 
   --spacing: 1rem;
   --primaryfont: system-ui, -apple-system, sans-serif;
@@ -17,16 +17,27 @@
   --xl: 75rem; /* 1200px */
   --lg: 64rem; /* 1024px */
   --md: 48rem; /* 768px */
-  --sm: 36rem; /* 576px */
+  --sm: 40rem; /* 640px */
+  --s: 36rem; /* 576px */
+  --xs: 30rem; /* 480px */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: hsl(0, 0%, 4%);
+    --foreground: hsl(0, 0%, 93%);
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+/*===================================================
+                      RESET
+====================================================*/
 *,
 *::before,
 *::after {
@@ -204,7 +215,10 @@ textarea {
   padding-block: calc(5 * var(--spacing));
 }
 
-/* MEDIA-QUERIES (1536px) */
+/*===================================================
+                      MEDIA-QUERIES
+====================================================*/
+/* BREAK-POINT: 1536px */
 @media screen and (max-width: 96rem) {
   .container {
     max-width: var(--xxl);
@@ -212,7 +226,7 @@ textarea {
   }
 }
 
-/* MEDIA-QUERIES (1366px) */
+/* BREAK-POINT: 1366px */
 @media screen and (max-width: 85.375rem) {
   .container {
     max-width: var(--xl);
@@ -220,7 +234,7 @@ textarea {
   }
 }
 
-/* MEDIA-QUERIES (1200px) */
+/* BREAK-POINT: 1200px */
 @media screen and (max-width: 75rem) {
   .container {
     max-width: var(--lg);
@@ -228,7 +242,7 @@ textarea {
   }
 }
 
-/* MEDIA-QUERIES (1024px) */
+/* BREAK-POINT: 1024px */
 @media screen and (max-width: 64rem) {
   .container {
     max-width: var(--md);
@@ -236,16 +250,24 @@ textarea {
   }
 }
 
-/* MEDIA-QUERIES (768px) */
+/* BREAK-POINT: 768px */
 @media screen and (max-width: 48rem) {
   .container {
     max-width: var(--sm);
-    padding-inline: calc(1 * var(--spacing));
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+/* BREAK-POINT: 640px */
+@media screen and (max-width: 40rem) {
+  .container {
+    max-width: var(--s);
+    padding-inline: calc(1.5 * var(--spacing));
+  }
+}
+
+/* BREAK-POINT: 575px */
+@media screen and (max-width: 36rem) {
+  .container {
+    max-width: var(--xs);
   }
 }
