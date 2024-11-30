@@ -215,6 +215,14 @@ textarea {
   padding-block: calc(5 * var(--spacing));
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
 /*===================================================
                       MEDIA-QUERIES
 ====================================================*/
