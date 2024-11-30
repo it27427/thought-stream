@@ -9,6 +9,15 @@
   --tertiary: #faaa2c;
 
   --spacing: 1rem;
+  --primaryfont: system-ui, -apple-system, sans-serif;
+
+  /* RESPONSIVE-BREAKPOINTS */
+  --xxxl: 96rem; /* 1536px */
+  --xxl: 85.375rem; /* 1366px */
+  --xl: 75rem; /* 1200px */
+  --lg: 64rem; /* 1024px */
+  --md: 48rem; /* 768px */
+  --sm: 36rem; /* 576px */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,9 +47,9 @@ body {
 }
 
 body {
-  color: var(--foreground);
   background: var(--background);
-  font-family: system-ui, -apple-system, sans-serif;
+  color: var(--foreground);
+  font-family: var(--primaryfont);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100svh;
@@ -76,7 +85,6 @@ textarea {
                       UTILITIES
 ====================================================*/
 .container {
-  max-width: clamp(300px, 80vw, 1200px);
   margin-inline: auto;
 }
 
@@ -162,6 +170,46 @@ textarea {
 
 .py-5 {
   padding-block: calc(5 * var(--spacing));
+}
+
+/* MEDIA-QUERIES (1536px) */
+@media screen and (max-width: var(--xxxl)) {
+  .container {
+    max-width: var(--xxl);
+    padding-inline: calc(5 * var(--spacing));
+  }
+}
+
+/* MEDIA-QUERIES (1366px) */
+@media screen and (max-width: var(--xxl)) {
+  .container {
+    max-width: var(--xl);
+    padding-inline: calc(4 * var(--spacing));
+  }
+}
+
+/* MEDIA-QUERIES (1200px) */
+@media screen and (max-width: var(--xl)) {
+  .container {
+    max-width: var(--lg);
+    padding-inline: calc(3 * var(--spacing));
+  }
+}
+
+/* MEDIA-QUERIES (1024px) */
+@media screen and (max-width: var(--lg)) {
+  .container {
+    max-width: var(--md);
+    padding-inline: calc(2 * var(--spacing));
+  }
+}
+
+/* MEDIA-QUERIES (768px) */
+@media screen and (max-width: var(--md)) {
+  .container {
+    max-width: var(--sm);
+    padding-inline: calc(1 * var(--spacing));
+  }
 }
 
 @media (prefers-color-scheme: dark) {
