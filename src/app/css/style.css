@@ -1,4 +1,6 @@
 :root {
+  color-scheme: light dark;
+
   --background: hsl(0, 0%, 94%);
   --foreground: hsl(0, 0%, 9%);
 
@@ -30,7 +32,7 @@
   }
 }
 
-/* .light {
+.light {
   --background: hsl(0, 0%, 94%);
   --foreground: hsl(0, 0%, 9%);
 
@@ -44,13 +46,23 @@
 .dark {
   --background: hsl(0, 0%, 4%);
   --foreground: hsl(0, 0%, 93%);
-} */
+}
 
-@media (prefers-color-scheme: dark) {
-  html {
+.light {
+  color-scheme: light;
+}
+.dark {
+  color-scheme: dark;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  .light {
+    color-scheme: light;
+  }
+  .dark {
     color-scheme: dark;
   }
-}
+} */
 
 /*===================================================
                       RESET

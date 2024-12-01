@@ -15,7 +15,7 @@ const ThemeContextProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => getFromLocalStorage());
 
   const toggle = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
+    setTheme(theme === 'light' ? 'dark' : 'light');
   }
 
   useEffect(() => {

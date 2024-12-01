@@ -15,6 +15,13 @@
   position: relative;
 }
 
+.sun,
+.moon {
+  font-size: 0.875rem;
+  position: relative;
+  z-index: 10;
+}
+
 .sun {
   color: hsl(47, 100%, 76%);
 }
@@ -32,6 +39,7 @@
   top: 0.125rem;
   left: 0.125rem;
   transition: transform 300ms linear;
+  z-index: 1;
 }
 
 .togglecheck:checked + .togglelabel .ball {

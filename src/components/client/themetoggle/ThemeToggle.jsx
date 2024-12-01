@@ -2,7 +2,7 @@
 
 import { useContext } from 'react';
 import styles from './themetoggle.module.css';
-import { FaSun } from "react-icons/fa";
+import { FaSun } from "react-icons/fa6";
 import { FaMoon } from "react-icons/fa6";
 import { ThemeContext } from '@/context/ThemeContext';
 
