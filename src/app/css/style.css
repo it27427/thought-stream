@@ -32,7 +32,7 @@
   }
 }
 
-.light {
+/* .light {
   --background: hsl(0, 0%, 94%);
   --foreground: hsl(0, 0%, 9%);
 
@@ -41,7 +41,7 @@
   --primary: hsl(223, 100%, 14%);
   --secondary: hsl(338, 100%, 44%);
   --tertiary: hsl(37, 95%, 58%);
-}
+} */
 
 .dark {
   --background: hsl(0, 0%, 4%);
@@ -93,6 +93,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100svh;
+  overflow-x: hidden;
 }
 
 figure,
@@ -385,6 +386,14 @@ button {
   }
 }
 
-.dark .header {
-  background: #000;
+.light header {
+  background: green;
+}
+
+.dark header {
+  background: red;
+}
+
+.dark .togglelabel {
+  background: hsl(0, 0%, 94%);
 }

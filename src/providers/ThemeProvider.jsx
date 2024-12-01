@@ -13,7 +13,7 @@ const ThemeProvider = ({ children }) => {
 
   if(mounted) {
     return (
-      <div className={theme}>{ children }</div>
+      <body className={theme}>{ children }</body>
     )
   }
 }

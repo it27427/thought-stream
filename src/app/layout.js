@@ -11,15 +11,13 @@ export const metadata = () => generatePageMetadata('Home');
 const RootLayout = ({ children }) => {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body>
-        <ThemeContextProvider>
-          <ThemeProvider>
-            <Header />
-            <Main>{children}</Main>
-            <Footer />
-          </ThemeProvider>
-        </ThemeContextProvider>
-      </body>
+      <ThemeContextProvider>
+        <ThemeProvider>
+          <Header />
+          <Main>{children}</Main>
+          <Footer />
+        </ThemeProvider>
+      </ThemeContextProvider>
     </html>
   );
 };

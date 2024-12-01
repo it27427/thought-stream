@@ -3,5 +3,5 @@
 }
 
 .dark > .header {
-  background: black;
+  background: red !important;
 }
