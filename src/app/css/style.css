@@ -30,6 +30,22 @@
   }
 }
 
+/* .light {
+  --background: hsl(0, 0%, 94%);
+  --foreground: hsl(0, 0%, 9%);
+
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --primary: hsl(223, 100%, 14%);
+  --secondary: hsl(338, 100%, 44%);
+  --tertiary: hsl(37, 95%, 58%);
+}
+
+.dark {
+  --background: hsl(0, 0%, 4%);
+  --foreground: hsl(0, 0%, 93%);
+} */
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -355,4 +371,8 @@ button {
   .container {
     max-width: var(--xs);
   }
+}
+
+.dark .header {
+  background: #000;
 }

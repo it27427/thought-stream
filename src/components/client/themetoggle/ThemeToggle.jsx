@@ -7,16 +7,16 @@ import { FaMoon } from "react-icons/fa6";
 import { ThemeContext } from '@/context/ThemeContext';
 
 const ThemeToggle = () => {
-  const {theme} = useContext(ThemeContext)
+  const { toggle, theme } = useContext(ThemeContext);
 
   return (
     <>
       <div className={styles.themebutton}>
-        <input type="checkbox" id="themetoggle" className={styles.togglecheck} hidden />
+        <input type="checkbox" id="themetoggle" onChange={toggle} className={styles.togglecheck} hidden />
         <label htmlFor="themetoggle" className={styles.togglelabel}>
           <FaSun className={styles.sun} />
           <FaMoon className={styles.moon} />
-          <span class={styles.ball}></span>
+          <span className={styles.ball}></span>
         </label>
       </div>
     </>

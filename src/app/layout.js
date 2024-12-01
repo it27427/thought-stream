@@ -4,6 +4,7 @@ import Main from '@/components/client/main/Main';
 import Footer from '@/components/client/footer/Footer';
 import { generatePageMetadata } from '@/utils/metadata';
 import ThemeContextProvider from '@/context/ThemeContext';
+import ThemeProvider from '@/providers/ThemeProvider';
 
 export const metadata = () => generatePageMetadata('Home');
 
@@ -12,14 +13,11 @@ const RootLayout = ({ children }) => {
     <html lang='en' suppressHydrationWarning>
       <body>
         <ThemeContextProvider>
-          {/* HEADER */}
-          <Header />
-
-          {/* MAIN-CONTENT */}
-          <Main>{children}</Main>
-
-          {/* FOOTER */}
-          <Footer />
+          <ThemeProvider>
+            <Header />
+            <Main>{children}</Main>
+            <Footer />
+          </ThemeProvider>
         </ThemeContextProvider>
       </body>
     </html>
