@@ -8,7 +8,7 @@ export const metadata = () => generatePageMetadata('Home');
 
 const RootLayout = ({ children }) => {
   return (
-    <html lang='en' suppressHydrationWarning={true}>
+    <html lang='en' suppressHydrationWarning>
       <body>
         {/* HEADER */}
         <Header />
