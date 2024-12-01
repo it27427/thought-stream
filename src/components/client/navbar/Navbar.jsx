@@ -10,11 +10,15 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className="container">
         <div className='flex items-center justify-between w-full'>
-          <Logo />
+          <div className={styles.brand}>
+            <Logo />
+          </div>
 
-          <MainMenu />
+          <div className={styles.navmenu}>
+            <MainMenu />
+          </div>
           
-          <div className='flex items-center gap-1'>
+          <div className={styles.authtoggle}>
             <AuthLink />
             <ThemeToggle />
           </div>

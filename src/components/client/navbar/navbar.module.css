@@ -4,3 +4,16 @@
   display: flex;
   align-items: center;
 }
+
+.brand,
+.navmenu,
+.authtoggle {
+  flex: 1;
+}
+
+.authtoggle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
