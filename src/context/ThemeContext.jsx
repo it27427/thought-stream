@@ -14,8 +14,10 @@ const getFromLocalStorage = () => {
 const ThemeContextProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => getFromLocalStorage());
 
+  console.log(theme)
+
   return (
-    <ThemeContext.Provider>{ children }</ThemeContext.Provider>
+    <ThemeContext.Provider value={{theme}}>{ children }</ThemeContext.Provider>
   )
 }
 
