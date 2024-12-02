@@ -394,6 +394,10 @@ button {
   background: red;
 }
 
+.light .togglelabel {
+  background: hsl(223, 100%, 14%);
+}
+
 .dark .togglelabel {
   background: hsl(0, 0%, 94%);
 }

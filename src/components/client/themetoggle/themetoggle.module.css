@@ -3,7 +3,6 @@
 }
 
 .togglelabel {
-  background: hsl(223, 100%, 14%);
   border-radius: 3.125rem;
   cursor: pointer;
   display: flex;
@@ -44,4 +43,26 @@
 
 .togglecheck:checked + .togglelabel .ball {
   transform: translateX(1.5rem);
+}
+.themebutton {
+  cursor: pointer;
+}
+
+.togglelabel {
+  border-radius: 3.125rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 3.125rem;
+  height: 1.625rem;
+  padding: 0.313rem;
+  position: relative;
+}
+.light .togglelabel {
+  background: hsl(223, 100%, 14%);
+}
+
+.dark .togglelabel {
+  background: hsl(0, 0%, 94%);
 }
