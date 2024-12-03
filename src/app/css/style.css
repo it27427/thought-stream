@@ -391,13 +391,19 @@ button {
 }
 
 .dark header {
-  background: red;
+  /* background: red; */
 }
 
-.light .togglelabel {
+.light .togglethemebtn {
   background: hsl(223, 100%, 14%);
 }
 
-.dark .togglelabel {
+.dark .togglethemebtn {
   background: hsl(0, 0%, 94%);
 }
+
+.dark .toggleball {
+  background: hsl(223, 100%, 14%);
+}
+
+/* 48:00 */

@@ -23,6 +23,7 @@
 
 .sun {
   color: hsl(47, 100%, 76%);
+  margin-inline-start: 0.0625rem;
 }
 
 .moon {

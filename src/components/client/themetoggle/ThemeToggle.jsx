@@ -13,10 +13,10 @@ const ThemeToggle = () => {
     <>
       <div className={styles.themebutton}>
         <input type="checkbox" id="themetoggle" onChange={toggle} className={styles.togglecheck} hidden />
-        <label htmlFor="themetoggle" className={styles.togglelabel}>
+        <label htmlFor="themetoggle" className={`${styles.togglelabel} togglethemebtn`}>
           <FaSun className={styles.sun} />
           <FaMoon className={styles.moon} />
-          <span className={styles.ball}></span>
+          <span className={`${styles.ball} toggleball`}></span>
         </label>
       </div>
     </>
