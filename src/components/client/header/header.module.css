@@ -1,7 +1,0 @@
-.light > .header {
-  background: #fff;
-}
-
-.dark > .header {
-  background: red !important;
-}

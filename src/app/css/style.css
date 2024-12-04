@@ -395,11 +395,11 @@ section {
 }
 
 .light header {
-  background: green;
+  background: white;
 }
 
 .dark header {
-  /* background: red; */
+  background: hsl(223, 100%, 14%);
 }
 
 .light .togglethemebtn {
