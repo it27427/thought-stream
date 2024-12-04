@@ -13,9 +13,7 @@ const ThemeProvider = ({ children }) => {
 
   if(mounted) {
     return (
-      <html lang='en' className={theme} suppressHydrationWarning>
-        { children }
-      </html>
+      <body className={theme}>{ children }</body>
     )
   }
 }
