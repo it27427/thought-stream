@@ -416,4 +416,36 @@ section {
   background: hsl(223, 100%, 14%);
 }
 
+.light .btn-primary {
+  border: solid 0.125rem hsl(223, 100%, 14%);
+}
+
+.light .btn-primary span {
+  color: hsl(223, 100%, 14%);
+}
+
+.light .btn-primary:hover span {
+  color: hsl(0, 0%, 100%);
+}
+
+.light .btn-primary:hover::before {
+  background: hsl(223, 100%, 14%);
+}
+
+.dark .btn-primary {
+  border: solid 0.125rem hsl(0, 0%, 100%);
+}
+
+.dark .btn-primary span {
+  color: hsl(0, 0%, 100%);
+}
+
+.dark .btn-primary:hover span {
+  color: hsl(223, 100%, 14%);
+}
+
+.dark .btn-primary:hover::before {
+  background: hsl(0, 0%, 100%);
+}
+
 /* 48:00 */
