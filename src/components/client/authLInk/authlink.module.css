@@ -1,6 +1,5 @@
 .loginbutton {
   background: transparent;
-  border: solid 0.125rem hsl(223, 100%, 14%);
   border-radius: 5rem;
   display: inline-flex;
   align-items: center;
@@ -11,7 +10,6 @@
 }
 
 .loginbutton span {
-  color: hsl(223, 100%, 14%);
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -33,12 +31,7 @@
   z-index: 1;
 }
 
-.loginbutton:hover span {
-  color: hsl(0, 0%, 100%);
-}
-
 .loginbutton:hover::before {
-  background: hsl(223, 100%, 14%);
   height: 100%;
 }
 
